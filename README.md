@@ -1,21 +1,21 @@
 # jjemoji
 
-jjemoji is a library used to input emoji characters
+jjemoji is a command line tool used to lookup emoji characters
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Check it out from GitHub:
 
-    gem 'jjemoji'
+    $ git clone https://github.com/dahakawang/jjemoji.git
 
-And then execute:
+Goto the root directory of jjemoji and install this gem:
 
-    $ bundle
+    $ rake install
 
-Or install it yourself as:
-
-    $ gem install jjemoji
+Then enjoy yourself with jjemoji!!  b(~_^)d
 
 ## Usage
 
-jjemoji tag tag ...
+Search for a emoji by tag
+
+    $ jjemoji tag tag ...
