@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 require 'jjemoji.rb'
 
-puts "hello world"
+list = Jjemoji::Emoji.find_emoji ARGV
+puts list
