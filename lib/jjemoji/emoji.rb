@@ -3,8 +3,9 @@
 module Jjemoji
 
   class Emoji
-    def find_emoji(*tags)
+    def self.find_emoji(tags)
       found_emoji = []
+      tags = normalize_tags tags
 
       EmojiDB.each do |emoji|
         if (tags - emoji).length == 0 
@@ -14,5 +15,12 @@ module Jjemoji
 
       found_emoji
     end
+
+    def self.normalize_tags(tags)
+      tags.collect do |tag|
+        tag.to_sym
+      end
+    end
+
   end
 end
