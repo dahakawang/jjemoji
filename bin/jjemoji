@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'jjemoji.rb'
+
+puts "hello world"
