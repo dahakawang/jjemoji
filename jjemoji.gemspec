@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["DevilDavidWang@gmail.com"]
   spec.description   = %q{This gem is used as a reference book for emoji}
   spec.summary       = %q{A emoji reference command}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dahakawang/jjemoji"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
