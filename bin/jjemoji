@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require 'jjemoji.rb'
 
+exit 0 if ARGV.length == 0 
+
 if ARGV[0].downcase == "list"
   puts Jjemoji::Emoji.list_tags
 else
