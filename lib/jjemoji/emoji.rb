@@ -22,5 +22,17 @@ module Jjemoji
       end
     end
 
+    def self.list_tags
+      tags = []
+
+      EmojiDB.each do |emoji|
+        emoji.each do |tag|
+          next if !tag.is_a? Symbol
+          tags << tag if !tags.include? tag
+        end
+      end
+
+      tags
+    end
   end
 end

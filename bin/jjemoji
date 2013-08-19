@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 require 'jjemoji.rb'
 
-list = Jjemoji::Emoji.find_emoji ARGV
-puts list
+if ARGV[0].downcase == "list"
+  puts Jjemoji::Emoji.list_tags
+else
+  list = Jjemoji::Emoji.find_emoji ARGV
+  puts list
+end
